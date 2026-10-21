@@ -30,4 +30,14 @@ fun main() {
     } else {
         println("'$str1' and '$str2' are not anagrams.")
     }
+
+    val twoSum = TwoSum()
+    val numbers = intArrayOf(1,2, 7,8, 11, 15)
+    val target = 9
+    val result = twoSum.twoSum(numbers, target)
+    if (result.isNotEmpty()) {
+        println("Indices of numbers that add up to $target are: ${result.joinToString(", ")}")
+    } else {
+        println("No two numbers add up to $target.")
+    }
 }
